@@ -46,14 +46,6 @@ function App() {
     //eslint-disable-next-line
   }, []);
 
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
-
-  if (isError) {
-    return <p>Sorry, an error has occurred.</p>;
-  }
-
   const onSave = avatar => {
     setAvatars(prev => [...prev, avatar]);
   };
@@ -62,6 +54,14 @@ function App() {
     setSelectedChar(character);
     setIsOpen(true);
   };
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
+
+  if (isError) {
+    return <p>Sorry, an error has occurred.</p>;
+  }
 
   return (
     <div className="App">
