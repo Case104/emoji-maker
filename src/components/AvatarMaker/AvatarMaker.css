@@ -1,0 +1,43 @@
+.create-emoji__heading {
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 1.5px;
+}
+
+.character__heading {
+  /* background: white;
+  color: var(--darkest-purple);
+  box-shadow: 0 0 10px black;
+  border-radius: 3px;
+  padding: 15px 80px; */
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 2.5px;
+}
+
+.create-emoji__btn {
+  border: none;
+  background: var(--not-selected);
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+.create-emoji__btn:hover {
+  background: var(--lavendar);
+}
+
+.create-emoji__btn--disabled {
+  color: rgb(179, 179, 179);
+}
+
+.create-emoji__input {
+  padding: 10px;
+  margin-bottom: 15px;
+  background: var(--darkest-purple);
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  border: unset;
+  border-bottom: 1px solid white;
+}
